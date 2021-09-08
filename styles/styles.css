@@ -1,3 +1,150 @@
-body{
-   font-family: 'Open Sans', sans-serif;;
+:root {
+   --block-code     : #292d3e;
+   --background-code: #444950;
+   --color-font     : #f5f6f7;
+   --color-link     : #63b25e;
+}
+
+* {
+   box-sizing: border-box;
+   margin    : 0;
+   padding   : 0;
+}
+
+html {
+   font-size  : 62.5%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+   width           : 100%;
+   background-color: #18191a;
+   color           : #f5f6f7;
+   font-size       : 1.6rem;
+}
+
+main {
+   margin: 3%;
+}
+
+li {
+   list-style: none;
+}
+
+h3 {
+   font-size  : 2rem;
+   font-weight: 600;
+   margin     : 15px;
+}
+
+p {
+   line-height: 24.75px;
+}
+
+a {
+   text-decoration: none;
+   color          : var(--color-link);
+}
+
+header {
+   font-size     : 2.2rem;
+   font-weight   : 700;
+   margin        : 20px 0;
+   text-transform: uppercase;
+}
+
+code {
+   background-color: var(--background-code);
+   padding         : 3px 6px;
+   border-radius   : 6px;
+}
+
+.div-code {
+   background-color: var(--block-code);
+   border-radius   : 8px;
+   padding         : 4px;
+   margin          : 10px;
+}
+
+.div-code span {
+   display    : block;
+   margin     : 10px;
+   font-family: 'Inconsolata', monospace;
+   font-size  : 1.4rem;
+}
+
+nav {
+   width           : 100%;
+   background-color: #242526;
+}
+
+nav .navbar--title {
+   padding    : 10px;
+   font-size  : 3.88rem;
+   font-weight: bold;
+   text-align : center;
+   margin     : 0;
+}
+
+nav .navbar__list {
+   border : 1px solid var(--background-code);
+   padding: 0;
+}
+
+.navbar__list li {
+   border-top: 1px solid var(--block-code);
+   position  : relative;
+   width     : 100%;
+}
+
+.navbar__list .nav-link {
+   display        : block;
+   padding        : 10px 30px;
+   color          : var(--color-font);
+   text-decoration: none;
+   cursor         : pointer;
+}
+
+img {
+   display: none;
+}
+
+
+@media (min-width: 768px) {
+   img {
+      display: block;
+      width  : 100%;
+      height : 500px;
+      margin : 30px 5px;
+   }
+}
+
+@media (min-width: 1024px) {
+   nav {
+      position    : fixed;
+      min-width   : 270px;
+      width       : 300px;
+      height      : 100%;
+      left        : 0;
+      top         : 0;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4);
+   }
+
+   nav .navbar__list {
+      height: 100%;
+   }
+
+   main {
+      position     : absolute;
+      margin-left  : 310px;
+      margin-top   : 0px;
+      padding      : 20px;
+      margin-bottom: 110px;
+   }
+
+   img {
+      width : 600px;
+      margin: 30px auto;
+   }
 }

@@ -8,14 +8,15 @@
    <title>Create React App</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata" rel="stylesheet">
    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
    <nav id="navbar">
-      <header>Create React App</header>
-      <ul>
+      <header class="navbar--title">Create React App</header>
+      <ul class="navbar__list">
          <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
          <li><a href="#Creating_an_App" class="nav-link">Creating an App</a></li>
          <li><a href="#Output" class="nav-link">Output</a></li>
@@ -30,7 +31,7 @@
             build setup with no configuration.</p>
          <ul>
             <li>
-               <h2>Quick Start</h2>
+               <h3>Quick Start</h3>
                <div class="div-code">
                   <span>npx create-react-app my-app</span>
                   <span>cd my-app</span>
@@ -42,7 +43,7 @@
                   <code>yarn global remove create-react-app</code> to
                   ensure that <code>npx</code> always uses the latest version.
                </div>
-               <p>Then open http://localhost:3000/ to see your app.</p>
+               <p>Then open <a href="http://localhost:3000/">http://localhost:3000/</a> to see your app.</p>
                <p>When you’re ready to deploy to production, create a minified bundle with <code>npm run build</code>
                </p>
                <img
@@ -132,7 +133,10 @@
                App</a></p>
       </section>
    </main>
-   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   <footer>
+
+   </footer>
+   
 </body>
 
 </html>
